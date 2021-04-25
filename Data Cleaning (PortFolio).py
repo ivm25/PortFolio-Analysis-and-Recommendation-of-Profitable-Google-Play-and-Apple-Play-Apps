@@ -338,7 +338,7 @@ display_table(Free_Apps,9)
 
 # Printing the Category column from the google dataset as a tuple:
 
-freq(Free_Apps,1)
+freq_table(Free_Apps,1)
 display_table(Free_Apps,1)
 
 
@@ -347,11 +347,11 @@ display_table(Free_Apps,1)
 
 # Printing the Prime Genre column from the Apple dataset as a tuple:
 
-freq(Free_Apps_Apple,11)
+freq_table(Free_Apps_Apple,11)
 display_table(Free_Apps_Apple,11)
 
 
-# Analyze the frequency table you generated for the prime_genre column of the App Store data set.
+# Analyze the freq_tableuency table you generated for the prime_genre column of the App Store data set.
 # ---
 # **What is the most common genre? What is the runner-up?**
 # 
@@ -365,11 +365,11 @@ display_table(Free_Apps_Apple,11)
 # 
 #   Most of them are for Entertainment purposes.
 #   
-# **Can you recommend an app profile for the App Store market based on this frequency table alone? If there's a large number of apps for a particular genre, does that also imply that apps of that genre generally have a large number of users?**
+# **Can you recommend an app profile for the App Store market based on this freq_tableuency table alone? If there's a large number of apps for a particular genre, does that also imply that apps of that genre generally have a large number of users?**
 # 
 #   An app profile wuld be gaming oriented, yet entertaining. Not necessarily it means that a large number of Gaming Genres will have a higher number of Users, that is something that needs further analysis. 
 
-# Analyze the frequency table you generated for the Category and Genres column of the Google Play data set.
+# Analyze the freq_tableuency table you generated for the Category and Genres column of the Google Play data set.
 # ---
 # 
 # **What are the most common genres?**
@@ -384,7 +384,7 @@ display_table(Free_Apps_Apple,11)
 # 
 # Differs in the sense that there are no clear cut winners with respect to top genres, it is a mixed bag of entertainment and practical usage apps.
 # 
-# **Can you recommend an app profile based on what you found so far? Do the frequency tables you generated reveal the most frequent app genres or what genres have the most users?**
+# **Can you recommend an app profile based on what you found so far? Do the freq_tableuency tables you generated reveal the most frequent app genres or what genres have the most users?**
 # Not right now, we need to analyse the most uers for that given genre/Category.
 
 # In[161]:
@@ -420,7 +420,7 @@ for genre in genre_ratings_apple:
 # In[182]:
 
 
-genre_ratings_google=freq(Free_Apps,1)
+genre_ratings_google=freq_table(Free_Apps,1)
 for category in genre_ratings_google:
     total=0
     len_category=0
